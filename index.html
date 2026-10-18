@@ -1,0 +1,497 @@
+<!--Site Kapıkulu tarafından yapılmıştır.-->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayım Gayrimenkul</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css">
+    <meta name="description" content="Kayım Gayrimenkul - Güvenilir emlak şirketi.">
+<meta property="og:title" content="Kayım Gayrimenkul">
+<meta property="og:image" content="logo.png">
+    <style>
+        :root{
+    --anarenk:rgb(204, 205, 216);
+    --yukrenk:rgb(214, 215, 226);
+        }
+        @media only screen and (max-width: 768px){
+            .iln1{
+    width: 90% !important;
+    margin-top: 20px !important;
+}
+#img1{
+    width: 90% !important;
+    height:auto !important;
+    margin-top: 20px;
+}
+#kont1{
+    height:auto !important;
+}
+#i1,#e1,#h1,#a1,#g1{
+    padding: 0px !important;
+    margin: 2px !important;
+    width: 20% !important;
+    font-size: 13px !important;
+}
+#rsm1{
+    width: 10% !important;
+    height: 50px !important;
+}
+        }
+        @keyframes a1{
+            0%{
+                background-color: black;
+            }
+            50%{
+                background-color: rgb(85, 85, 85);
+            }
+            100%{
+                background-color: black;
+            }
+        }
+        @keyframes a2{
+            0%{
+                background-color: rgb(121, 121, 121);
+            }
+            50%{
+                background-color: rgb(68, 68, 68);
+            }
+            100%{
+                background-color: rgb(121, 121, 121);
+            }
+        }
+        body{
+            height: 100vh;
+            background-color: var(--anarenk);
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+#kont1{
+    background-color: var(--yukrenk);
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 10px black;
+}
+#i1,#e1,#h1,#g1{
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 10px;
+    display: inline;
+    cursor: pointer;
+    padding: 5px;
+}
+#a1{
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    display: inline;
+    cursor: pointer;
+}
+#i1:hover{
+    text-decoration:underline;
+    color: rgb(0, 179, 255);
+    transition: 0.3s ease-out;
+}
+#e1:hover{
+    text-decoration:underline;
+    color: rgb(0, 179, 255);
+    transition: 0.3s ease-out;
+}
+#h1:hover{
+    text-decoration:underline;
+    color: rgb(0, 179, 255);
+    transition: 0.3s ease-out;
+}
+#g1:hover{
+    text-decoration:underline;
+    color: rgb(0, 179, 255);
+    transition: 0.3s ease-out;
+}
+#a1:hover{
+    transition: 1s ease;
+    rotate: 145deg;
+}
+#kont1 *:focus{
+    color: rgb(0, 179, 255);
+    text-decoration: underline;
+}
+#i2,#e2,#h2{
+    display: none;
+}
+.iln1{
+    background-color: rgb(216, 215, 215);
+    border-radius: 20px;
+    max-width: 800px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(59, 59, 59);
+    font-family: 'Arial', sans-serif;
+    font-size: 80%;
+    margin-top: 3%;
+    border: 1px solid black;
+    border-width: 3px;
+    padding: 10px;
+}
+.iln1:hover{
+    border-color: rgb(71, 71, 71);
+    background-color: rgb(190, 190, 190);
+    border-radius: 20px;
+    margin-top: 2%;
+    box-shadow: 0 0 25px rgb(161, 161, 161);
+    transition: 0.2s ease;
+    padding: 12px;
+}
+#dgstrbtn{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 200px;
+    font-size: 20px;
+}
+#dgstrbtn:hover{
+    background-color: rgb(121, 121, 121);
+    border: 0;
+    cursor: pointer;
+    width: 35px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+#dgstrbtn:focus{
+    animation: a2 0.6s ease-in-out;
+}
+#g2{
+justify-content: center;
+align-items: center;
+}
+#g2 p{
+    font-family: 'Segoe Script', cursive;
+    color: rgb(156, 156, 138);
+}
+#img1{
+    margin-top: 50px;
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid;
+    border-width: 5px;
+}
+#img1:hover{
+    height: 505px;
+    width: 605px;
+}
+#h2 *{
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+#a2{
+    display: none;
+}
+#ab1{
+    background-color: var(--yukrenk);
+    color: black;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    font-style: italic;
+}
+#rsm1{
+    width: 80px;
+    height: 80px;
+    margin-right: 70px;
+}
+#hkmz{
+    max-width: 200px;
+    height: 100vh;
+    display: flex;
+}
+::selection{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 128, 128);
+}
+.link{
+    text-decoration: none;
+    color: rgb(0, 217, 255);
+    cursor: pointer;
+    font-size: 18px;
+}
+.link:hover{
+    text-decoration: underline;
+    color: rgb(41, 223, 255);
+    transition: 0.1s;
+}
+    </style>
+</head>
+<body>
+    <h1 style="position: absolute;" id="kayimg">Kayım Gayrimenkul</h1> <!--SEO için.-->
+    <div id="kont1">
+        <img src="logo.png" alt="Kayım Gayrimenkul" id="rsm1">
+        <button onclick="B4()" id="g1">Anasayfa</button>
+        <button onclick="B3()" id="h1">Hakkımızda</button>
+        <button onclick="B1()" id="i1">İlanlar</button>
+        <button onclick="B2()" id="e1">Ekibimiz</button>
+        <button id="a1" onclick="B5()" aria-label="Ayarları Aç" title="Ayarlar"><i class="fas fa-cog" aria-hidden="true"></i></button>
+        <!--<button onclick="B4()" id="a1">3D Apartman Modeli</button>-->
+    </div>
+    <div id="a2">
+        <h2 style="display: inline;">Renk: </h2> <input type="color" id="renk" style="display: inline;cursor: pointer;" value="rgb(41, 79, 80)">
+        <h2 style="display: inline;">Yazı boyutu: </h2> <input type="range" id="byt" style="display: inline;cursor: pointer;" min="12" max="28">
+        <button onclick='clearInterval(dongus1);document.getElementById("slaytd").textContent = "Slayt durduruldu.";' id="slaytd">Slaytı Durdur.</button>
+    </div>
+    <div id="i2">
+        <center>
+        <div class="iln1">
+        <h3>Ad: MALTEPE CEVİZLİ KAYIM REZİDANS SİTESİNDE DENİZ MANZARALI 2+1</h3>
+        <p>Fiyat: 15.000.000 TL</p>
+        <p>Deniz Manzaralı, Yatırımlık ve Oturuma uygun daire.</p>
+        <a href="https://www.sahibinden.com/ilan/emlak-konut-satilik-maltepe-cevizli-kayim-rezidans-sitesinde-deniz-manzarali-2-plus1-1338029191/detay" class="link">Sahibinden</a>
+        </div>
+        <div class="iln1">
+        <h3>Ad: KAYIM REZİDANS SİTESİNDE SATILIK 2+1 DAİRE</h3>
+        <p>Fiyat: 14.700.000 TL</p>
+        <p>Öne Çıkan Özellikleri: Sahile,Minibüse,Marmaraya yakın ve Okullara yakın bir daire.</p>
+        <a href="https://www.sahibinden.com/ilan/emlak-konut-satilik-kayim-rezidans-sitesinde-satilik-2-plus1-daire-1292985804/detay" class="link">Sahibinden</a>
+        </div>
+        <div class="iln1">
+        <h3>Ad: MALTEPE CEVİZLİ 3+1 SIFIR BİNADA EBEBEYN BANYOLU KİRALIK DAİRE</h3>
+        <p>Fiyat: 64.000 TL</p>
+        <p>Öne Çıkan Özellikleri: Konforlu ve bölgedeki yerlere yakın olan kiralık konut.</p>
+        <a href="https://www.sahibinden.com/ilan/emlak-konut-kiralik-maltepe-cevizli-3-plus1-sifir-binada-ebebeyn-banyolu-kiralik-daire-1336302028/detay" class="link">Sahibinden</a>
+        </div>
+        <div class="iln1">
+        <h3>Ad: Maltepe Cevizli Karton Sokak'ta Kiralık 5+2 Geniş Dubleks Daire</h3>
+        <p>Fiyat: 110.000 TL</p>
+        <p>Öne Çıkan Özellikleri: 5 oda 2 salonlu büyük ve 24 Saat Güvenliğe sahip Üniversiteye yakın modern bir konut.</p>
+        <a href="https://www.sahibinden.com/ilan/emlak-konut-kiralik-maltepe-cevizli-karton-sokak-ta-kiralik-5-plus2-genis-dubleks-daire-1252894077/detay" class="link">Sahibinden</a>
+        </div>
+        <div class="iln1">
+        <h3>Ad: BURSA İNEGÖL YENİCEKÖYDE VİLLA İMARLI SATILIK ARSA</h3>
+        <p>Fiyat: 4.750.000 TL</p>
+        <p>Öne Çıkan Özellikleri: Doğa ile iç içe huzurlu ve villa projeleri için ideal bir arsa.Ulaşımı kolay ve yatırıma uygun bir arsa.</p>
+        <a href="https://www.sahibinden.com/ilan/emlak-arsa-satilik-bursa-inegol-yenicekoyde-villa-imarli-satilik-arsa-1324656816/detay" class="link">Sahibinden</a>
+        </div>
+        <div class="iln1">
+        <h3>Ad: İnegöl Yeniceköyde Shell Karşısı Ticari İmarlı Fırsat Arsa</h3>
+        <p>Fiyat: 18.100.000 TL</p>
+        <p>Öne Çıkan Özellikleri: 1.747m² Büyük bir arsa.İnşaat hakkı var.</p>
+        <a href="https://www.sahibinden.com/ilan/emlak-arsa-satilik-inegol-yenicekoyde-shell-karsisi-ticari-imarli-firsat-arsa-1324688175/detay" class="link">Sahibinden</a>
+        </div>
+        </center>
+    </div>
+        <div id="e2">
+            <center>
+<div class="iln1" style="max-width: 500px;">
+    <h3>Ad: Abdülkerim Buyruk</h3>
+    <p>Görevi: Site yönetimi ve emlakçılık.Müdür.Kendisi deneyimli birisi.</p>
+</div>
+<div class="iln1" style="max-width: 500px;">
+    <h3>Ad: Recep Buyruk</h3>
+    <p>Görevi: Müdür yardımcısı.</p>
+</div>
+</center>
+        </div>
+        <div id="h2">
+                <div class="hkmz">
+            <center><h4 style="font-size: 50px;height: 110px;background-color: rgb(150, 150, 150);padding-top: 55px;color: white;display:block;margin-bottom: 10px;margin-top: 10px;">Hakkımızda</h4></center>
+            <h4 style="font-size: 50px;">| Tarihçe</h4>
+            <p>Bizim için her proje, yepyeni yaşamlara atılan sağlam bir temeldir. <hr>
+<p id="metin1" style="opacity: 0;transition:all 1s ease;">
+2015 Yılından beri inşaat sektöründe <b>Kayım Gayrimenkul</b> adıyla faaliyet gösteren şirketimiz <b>Müdür Abdülkerim Buyruk</b> tarafından kurularak günümüz şartlarının gerektirdiği kurumsal kimliğini kazanarak yoluna devam etmektedir.
+<br>
+Firmamız kurulduğu günden itibaren yapılan işlerde kalite ve sağlamlığı ön planda tutmuş, bugüne kadar yapılan tüm projelere de bunu en iyi şekilde yansıtmıştır. 2010'lu yıllarda kamu ve konut sektöründe faaliyet göstermeye başlayan <b>Kayım Gayrimenkul</b>, her dönemde yapılanın en iyisini yapmayı hedeflemiş, gerçekleştirilen projelerle sektörde her zaman yeniliklerin öncüsü olmayı ilke edinmiştir. Gerçekleştirilen projelerde her zaman fonksiyonellik ve konfor ön planda tutulmuş ve tüm projelerde bu detaylara ağırlık verilmiştir. Firmamız her zaman, <b>“bulunduğu mekanda mutlu olmayı dileyen”</b> insanların tercihi olmuştur.
+<br>
+Ülkemizin farklı bölgelerinde bir çok konut projesine imza atan <b>Kayım Gayrimenkul</b> 2015 yılından itibaren inşaat sektöründe hızlı ve istikrarlı bir şekilde genişleyerek büyümüştür. Kurulduğundan itibaren ülkemizin farklı bölgelerinde ağırlıklı olarak  İstanbul daha sonra Ankara'nın farklı bölgelerinde faaliyetlerine devam eden bir firma olarak semt dokusuna uygun yapılar inşa etmektedir.
+<br>
+Kurulduğu günden günümüze kadar inşaat sektöründe kaliteli hizmet vererek deneyiminin de getirdiği uzmanlıkla örnek gösterilen projelere imza atan <b>Kayım Gayrimenkul</b> müşterilerinin duyduğu güvenden aldığı güç ile her geçen gün büyümüş ve güvenilir bir marka haline gelmiştir. 
+<br>
+<b>Kayım Gayrimenkul</b> anlayışı ile müşterilerinin ihtiyaçlarına uygun prestijli pr ojeler inşa ederek üstün kalitede lüks konutlar ile fark yaratıp binalara ve bulunduğu semte değer katmıştır. 
+<br>
+Yapılarımızı mesleğimize saygıyla 2015'den beri ince eleyip sık dokuyarak el emeğini mühendislik tekniği ile harmanlayarak üretiyoruz.
+<br>
+2015 yılında <b>Kayım Gayrimenkul</b> olarak kurulan firmamız, kurulduğu günden bu yana kamu sektöründe de bir çok projeye imza atmıştır. <br>
+Firmamız, müşteri talep ve ihtiyaçları doğrultusunda sektördeki faaliyetlerine devam etmektedir.  
+<br>
+<b>Kayım Gayrimenkul</b> olarak başlıca hedefimiz, <b>nitelikli konut</b> sektöründe marka olan firmamızı daha iyiye taşımak ve bu konuda sektörün öncü firmalarından biri olmaktır. Bugüne kadar sektöre kazandırmış olduğu projelerle her zaman bir adım daha ileriye gitmekte ve kendini sürekli yenileyerek sektördeki yatırımlarını hızla devam ettirmektedir. <br>
+Firmamızın kuruluşundan beri değişmeyen ilkemiz kalite ve yüzde yüz müşteri memnuniyeti olmuştur. Hiçbir zaman bu ilkelerden ödün vermeyen firmamız sektörde sağlamlık, güven, müşteri memnuniyeti ve kaliteyi temsil etmektedir.</p>
+</p>
+<hr>
+<h4> İletişim: </h4>
+<p> 0 (507) 668 04 87</p>
+<a href="https://kayimgayrimenkul.sahibinden.com/" class="link">Sahibinden</a>
+</div>
+        </div>
+        <div id="g2">
+            <center>
+            <p id="yazi">Bizim için her proje, yepyeni yaşamlara atılan sağlam bir temeldir.</p>
+            <img src="rsm1.png" alt="Kayım Gayrimenkul Resimleri" id="img1">
+            </center>
+        </div>
+        <footer id="ab1">
+            <center>
+                <h6>Kayım Gayrimenkul ©</h6>
+                <p style="font-size: 12px;"><i class="fas fa-phone" style="margin-right: 10px;color:blue;text-shadow:0 0 5px rgb(107, 107, 255);"></i> İletişim: 0 (507) 668 04 87</p>
+<p style="font-size: 10px;">Bizim için her proje, yepyeni yaşamlara atılan sağlam bir temeldir. <br> 2015 Yılından beri inşaat sektöründe Kayım Gayrimenkul adıyla faaliyet gösteren şirketimiz Müdür Abdülkerim Buyruk tarafından kurularak  <br> günümüz şartlarının gerektirdiği kurumsal kimliğini kazanarak yoluna devam etmektedir.</p>
+</center>
+        </footer>
+        <script>
+            if(navigator.userAgent.includes("kayimg")){
+                alert("userAgent'te kayimg var.");
+            }
+            else{
+                document.getElementById("kayimg").style.opacity = "0";
+            }
+            var rsmkc = 1;
+            var snc = "";
+            function ckr(){
+            var i = 0;
+            var i3 = setInterval(function(){
+            if(i < "Bizim için her proje, yepyeni yaşamlara atılan sağlam bir temeldir.".length){
+snc += "Bizim için her proje, yepyeni yaşamlara atılan sağlam bir temeldir."[i];
+if(i == "Bizim için her proje, yepyeni yaşamlara atılan sağlam bir temeldir.".length - 1){
+    document.getElementById("yazi").textContent = snc;
+    clearInterval(i3);
+}
+else{
+document.getElementById("yazi").textContent = snc + "|";
+}
+i++;
+            }
+            }, 50);
+        }
+        ckr();
+            function B1(){
+                document.getElementById("i2").style.display = "block";
+                document.getElementById("e2").style.display = "none";
+                document.getElementById("g2").style.display = "none";
+                document.getElementById("h2").style.display = "none";
+                document.getElementById("a2").style.display = "none";
+            }
+            function B2(){
+                document.getElementById("i2").style.display = "none";
+                document.getElementById("e2").style.display = "block";
+                document.getElementById("g2").style.display = "none";
+                document.getElementById("h2").style.display = "none";
+                document.getElementById("a2").style.display = "none";
+            }
+            function B3(){
+                document.getElementById("i2").style.display = "none";
+                document.getElementById("e2").style.display = "none";
+                document.getElementById("g2").style.display = "none";
+                document.getElementById("h2").style.display = "block";
+                document.getElementById("a2").style.display = "none";
+                document.getElementById("metin1").style.opacity = "0";
+                setTimeout(function(){
+                document.getElementById("metin1").style.opacity = "1";
+                }, 1000);
+            }
+            function B4(){
+                document.getElementById("g2").style.display = "flex";
+                document.getElementById("i2").style.display = "none";
+                document.getElementById("e2").style.display = "none";
+                document.getElementById("h2").style.display = "none";
+                document.getElementById("a2").style.display = "none";
+            }
+            function B5(){
+                document.getElementById("g2").style.display = "none";
+                document.getElementById("i2").style.display = "none";
+                document.getElementById("e2").style.display = "none";
+                document.getElementById("h2").style.display = "none";
+                document.getElementById("a2").style.display = "block";
+                document.body.style.backgroundColor = document.getElementById("renk").value;
+                document.body.style.fontSize = document.getElementById("byt").value + "px";
+            }
+            function DGSTR(){
+                if(rsmkc == 2){
+                    rsmkc = 3;
+                    document.getElementById("img1").src = "rsm1.png";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 1){
+                    rsmkc = 2;
+                    document.getElementById("img1").src = "rsm2.png";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 3){
+                    rsmkc = 4;
+                    document.getElementById("img1").src = "a3.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+else if(rsmkc == 4){
+                    rsmkc = 5;
+                    document.getElementById("img1").src = "a4.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 5){
+                    rsmkc = 6;
+                    document.getElementById("img1").src = "a5.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 6){
+                    rsmkc = 7;
+                    document.getElementById("img1").src = "a6.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 7){
+                    rsmkc = 8;
+                    document.getElementById("img1").src = "a7.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 8){
+                    rsmkc = 9;
+                    document.getElementById("img1").src = "a8.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 9){
+                    rsmkc = 1;
+                    document.getElementById("img1").src = "a9.jpg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+            }
+            var dongus1 = setInterval(function(){
+DGSTR();
+            }, 3000);
+        </script>
+</body>
+</html>
